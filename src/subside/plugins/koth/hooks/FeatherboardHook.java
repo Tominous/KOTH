@@ -166,7 +166,7 @@ public class FeatherboardHook extends AbstractHook implements Listener {
             @Override
             public void run() {
                 be.maximvdw.featherboard.api.FeatherBoardAPI.showScoreboard(player, board);
-                //Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "fb show "+player.getName()+" "+board);
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "featherboard show "+player.getName()+" "+board);
             }
         }, 1);
     }
@@ -177,7 +177,7 @@ public class FeatherboardHook extends AbstractHook implements Listener {
             public void run() {
                 be.maximvdw.featherboard.api.FeatherBoardAPI.removeScoreboardOverride(player, board);
                 be.maximvdw.featherboard.api.FeatherBoardAPI.resetDefaultScoreboard(player);
-                //Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "fb hide "+player.getName()+" "+board);
+                Bukkit.dispatchCommand(Bukkit.getConsoleSender(), "featherboard hide "+player.getName()+" "+board);
             }
         }, 1);
     }
