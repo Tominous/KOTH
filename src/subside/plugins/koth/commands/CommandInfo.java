@@ -36,9 +36,9 @@ public class CommandInfo extends AbstractCommand {
             if (args.length < 2) {
                 Utils.sendMessage(sender, true,
                     new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_TITLE).title("KoTH editor").build(), 
-                    new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info koth <koth>").commandInfo("Info about a koth").build(), 
-                    new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info loot <loot>").commandInfo("Info about a loot chest").build(), 
-                    new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info schedule <schedule>").commandInfo("Info about a schedule").build());
+                    new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info koth <koth>").commandInfo("Information about a koth").build(), 
+                    new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info loot <loot>").commandInfo("Information about a loot chest").build(), 
+                    new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info schedule <schedule>").commandInfo("Information about a schedule").build());
                 return;
             }
 
@@ -52,15 +52,15 @@ public class CommandInfo extends AbstractCommand {
             } else {
                 Utils.sendMessage(sender, true,
                         new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_TITLE).title("KoTH editor").build(), 
-                        new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info koth <koth>").commandInfo("Info about a koth").build(), 
-                        new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info loot <loot>").commandInfo("Info about a loot chest").build(), 
-                        new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info schedule <ID>").commandInfo("Info about a schedule").build());
+                        new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info koth <koth>").commandInfo("Information about a koth").build(), 
+                        new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info loot <loot>").commandInfo("Information about a loot chest").build(), 
+                        new MessageBuilder(Lang.COMMAND_GLOBAL_HELP_INFO).command("/koth info schedule <ID>").commandInfo("Information about a schedule").build());
             }
             
         } else if (Perm.VERSION.has(sender)) {
             List<String> list = new ArrayList<>();
             list.add(" ");
-            list.addAll(new MessageBuilder("&8========> &2INFO &8<========").buildArray());
+            list.addAll(new MessageBuilder("&8==========> &2&lINFORMATION &r&8<==========").buildArray());
             list.addAll(new MessageBuilder("&2Author: &aSubSide").buildArray());
             list.addAll(new MessageBuilder("&2Version: &a" + getPlugin().getDescription().getVersion()).buildArray());
             list.addAll(new MessageBuilder("&2Site: &ahttp://bit.ly/1Pyxu2N").buildArray());
@@ -309,7 +309,7 @@ public class CommandInfo extends AbstractCommand {
 
     @Override
     public String getDescription() {
-        return "info about various things (helpful!)";
+        return "information about various things (very helpful!)";
     }
 
 }
