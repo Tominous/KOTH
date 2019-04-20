@@ -3,11 +3,11 @@
 # To grab your own timezone go to: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 global:
-  use-cache: false
-  debug: false
+  use-cache: true
+  debug: true
   multiplekothsatonce: true
   schedule-show-current-day-only: false
-  schedule-timezone: "Europe/Amsterdam"
+  schedule-timezone: "Europe/London"
   date-format: "dd/MM/yyyy HH:mm:ss"
   minuteoffset: 0
   startweekminuteoffset: 0
@@ -42,8 +42,8 @@ hooks:
   gangs: true
   pvpmanager: true
   featherboard:
-    enabled: false
-    board: "koth"
+    enabled: true
+    board: "KOTH"
     range: 100 # -1 to disable it
     rangemargin: 5
 
